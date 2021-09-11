@@ -29,7 +29,7 @@ This repository is part of the [Curso de Ruby on Rails 6 como API](https://www.y
 
 ```bash
 # clone the project
-git clone https://github.com/CaioProg/curso_tour_of_heroes_api.git
+git clone https://github.com/CaioProg/curso_tour_of_heroes_api
 
 # enter the cloned directory
 cd curso_tour_of_heroes_api
@@ -45,6 +45,30 @@ rails db:migrate
 
 # run the project
 rails s
+```
+
+The backend is available at `http://localhost:3000`.
+
+## Tests
+
+![Tests](https://github.com/caioprog/curso_tour_of_heroes_api/actions/workflows/ruby.yml/badge.svg)
+
+To run the tests:
+
+```bash
+rspec
+```
+
+## Using the HEROES API
+
+### Include a Header Authorization
+
+For all requests, use an **Authorization header**, of size> = 10 characters, so that you can only manipulate your data, for example:
+
+```bash
+curl --request GET \
+  --url 'https://curso-tour-of-heroes-api-ruby.herokuapp.com/api/heroes' \
+  --header 'Authorization: anyTokenCanBeUsed'
 ```
 
 ### API Endpoint
