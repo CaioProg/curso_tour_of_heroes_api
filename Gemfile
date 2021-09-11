@@ -16,12 +16,14 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'sqlite3', '~> 1.4'
   gem "rspec-rails", "~> 5.0"
+  gem "factory_bot_rails", "~> 6.2"
+  gem "faker", "~> 2.19"
 end
 
 group :development do
   gem 'listen', '~> 3.3'
   gem 'spring'
-  gem "faker", "~> 2.19"
+  gem "spring-commands-rspec", "~> 1.0"
 end
 
 group :test do 
@@ -32,6 +34,8 @@ end
 group :production do
   gem "pg", "~> 1.2"
 end
+
+
 
 
 
