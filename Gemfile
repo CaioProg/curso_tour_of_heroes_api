@@ -8,7 +8,7 @@ gem 'puma', '~> 5.0'
 gem 'bootsnap', '>= 1.4.4', require: false
 gem "active_model_serializers", "~> 0.10.12"
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-
+gem 'rubocop', require: false
 
 
 group :development, :test do
